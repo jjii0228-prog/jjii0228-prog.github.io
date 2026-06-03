@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mechanical Engineering Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f4f6f8;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+nav{
+    background:#111827;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2rem;
+    color:#1e3a8a;
+}
+
+.about{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#1e3a8a;
+    margin-bottom:15px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+}
+
+.skill{
+    background:#1e3a8a;
+    color:white;
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.counter{
+    text-align:center;
+    font-size:2rem;
+    color:#1e3a8a;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mechanical Engineering Portfolio</h1>
+    <p>Composite Materials · Structural Analysis · Mechanical Design</p>
+</header>
+
+<nav>
+    <a href="#about">소개</a>
+    <a href="#projects">프로젝트</a>
+    <a href="#skills">기술</a>
+    <a href="#future">목표</a>
+</nav>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+        <p>
+            기계공학을 전공하며 재료공학, 구조해석, 복합재료 연구에 관심을 가지고 있습니다.
+            ANSYS를 활용한 구조해석과 복합재료 제조 공정(VARTM),
+            FT-IR 분석을 통한 재료 특성 평가를 경험하고 있습니다.
+            공학적 문제를 해결하기 위해 실험과 해석을 함께 활용하는 엔지니어를 목표로 하고 있습니다.
+        </p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>VARTM Composite Research</h3>
+            <p>
+                Vacuum Assisted Resin Transfer Molding 공정을 이용한
+                복합재료 제작 및 특성 평가 연구.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>FT-IR Analysis</h3>
+            <p>
+                UV 가속 노화 조건에서 복합재료의 화학적 변화를
+                FT-IR 스펙트럼을 통해 분석.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>ANSYS Structural Analysis</h3>
+            <p>
+                응력 분포와 응력 집중 현상을 확인하기 위한
+                유한요소해석(FEA) 수행.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Hyatt Walkway Failure Study</h3>
+            <p>
+                Hyatt Regency Walkway Collapse 사례를 통해
+                구조 설계 오류와 하중 전달 메커니즘 분석.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills">
+        <div class="skill">ANSYS</div>
+        <div class="skill">CATIA</div>
+        <div class="skill">Solid Mechanics</div>
+        <div class="skill">Composite Materials</div>
+        <div class="skill">FT-IR</div>
+        <div class="skill">FEA</div>
+        <div class="skill">Mechanical Design</div>
+        <div class="skill">Research</div>
+    </div>
+</section>
+
+<section id="future">
+    <h2 class="section-title">Future Goal</h2>
+
+    <div class="about">
+        <p>
+            재료공학과 구조해석 분야의 전문성을 강화하여
+            복합재료, 기계설계 및 CAE 해석 분야에서
+            문제 해결 능력을 갖춘 엔지니어로 성장하는 것이 목표입니다.
+        </p>
+
+        <br>
+
+        <div class="counter" id="counter">0</div>
+        <p style="text-align:center;">Engineering Passion Index</p>
+    </div>
+</section>
+
+<footer>
+    <p>Mechanical Engineering Portfolio | Vibe Coding Project 2026</p>
+</footer>
+
+<script>
+
+let count = 0;
+const target = 100;
+
+const interval = setInterval(() => {
+    count++;
+    document.getElementById("counter").innerText = count;
+
+    if(count >= target){
+        clearInterval(interval);
+    }
+},20);
+
+</script>
+
+</body>
+</html>
